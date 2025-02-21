@@ -7,20 +7,27 @@
     <link rel="stylesheet" href="output.css" />
     <script src="js.js" defer></script>
   </head>
-  <body class="h-screen w-screen bg-black overflow-hidden">
+  <body class="h-screen w-full bg-black">
     <div
       class="absolute inset-0 z-10 bg-amaro bg-cover bg-blend-overlay bg-black/50 transition duration-500 ease opacity-0 bg-top"
       id="foto"
     ></div>
-    <div class="container mx-auto relative overflow-x-hidden">
+    <div
+      class="container flex justify-center items-center h-full relative mx-auto"
+    >
       <audio
         controls
         src="take.mp3"
         class="bg-transparent absolute z-30 h-10 bottom-[20px] right-1/2 transform translate-x-1/2 opacity-10 hover:opacity-100 transition duration-500 ease-out"
       ></audio>
-      <div
-        class="w-full h-screen flex justify-center items-center bg-black overflow-x-hidden relative"
+      <h1
+        class="relative xl:text-9xl md:text-8xl text-5xl sm:tracking-[17px] tracking-[10px] uppercase text-center leading-[100%] outline-none animate-dimlight box-reflect transition duration-500 ease-out z-50 text-white glowish w-[300px] sm:w-full"
+        id="text"
       >
+        COMING SOON
+      </h1>
+
+      <div class="relative h-full overflow-hidden">
         <img
           src="./nestor.png"
           width="300px"
@@ -28,6 +35,7 @@
           class="absolute top-0 right-0 sm:bottom-0 sm:top-[unset] sm:left-1/24 z-20 transform translate-x-[-1000px] transition duration-2000 ease-out w-[200px] sm:w-[200px] md:w-[300px]"
           id="nestor"
         />
+
         <img
           src="./coruja.png"
           width="300px"
@@ -55,12 +63,7 @@
           class="absolute bottom-1/2 md:bottom-0 right-1/2 z-20 transform translate-x-[2000px] transition duration-2000 ease-out -scale-x-100 w-[300px] md:w-[400px]"
           id="push"
         />
-        <h1
-          class="relative xl:text-9xl md:text-8xl text-5xl sm:tracking-[17px] tracking-[10px] uppercase text-center leading-[100%] outline-none animate-dimlight box-reflect transition duration-500 ease-out z-50 text-white glowish w-[300px] sm:w-full"
-          id="text"
-        >
-          COMING SOON
-        </h1>
+
         <video
           src="./amaro.mp4"
           autoplay
